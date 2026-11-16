@@ -7,7 +7,7 @@ A stdio MCP server that signs in to a remote OAuth-protected MCP server from ins
 - **Refresh:** access tokens are refreshed from the saved refresh token. When that's rejected, `sign_in` comes back.
 - **Fallback:** clients without URL elicitation get the link in the tool result, then finish with `sign_in(address=…)`.
 - **Startup instructions:** they tell the agent to call `sign_in` straight away when it's the only tool.
-- **Standard library only:** Python 3.9+. Tools are forwarded; resources, prompts and requests from the server back to the client aren't.
+- **Standard library only:** Python 3.11+. Tools are forwarded; resources, prompts and requests from the server back to the client aren't.
 
 ## Use
 
